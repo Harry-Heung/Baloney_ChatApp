@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "987411613206",
+    "project_id": "ea-vtc-chat",
+    "storage_bucket": "ea-vtc-chat.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:987411613206:android:ac7e60431f1618d59cd737",
+        "android_client_info": {
+          "package_name": "com.example.ea_vtc_chat_project"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCB97Vf8FLfGymzopltziV3PjIlC7-pzpU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

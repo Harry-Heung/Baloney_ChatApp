@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:background="@color/cardview_light_background">
+
+                <ImageView
+                    android:id="@+id/backButton"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:contentDescription="@string/todo"
+                    android:src="@drawable/baseline_arrow_back_ios_new_24"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:background="?attr/selectableItemBackgroundBorderless" />
+
+                <TextView
+                    android:id="@+id/settingsTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/profile_setting"
+                    android:textColor="@android:color/black"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:layout_centerInParent="true" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:gravity="center_horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_image_setting"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/usericon_default"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:layout_centerInParent="true" />
+
+                <ImageView
+                    android:id="@+id/upload_image_btn_setting"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignEnd="@id/profile_image_setting"
+                    android:layout_alignBottom="@id/profile_image_setting"
+                    android:contentDescription="@string/todo"
+                    android:src="@drawable/baseline_upload_24" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:text="@string/upload_icon"
+                android:textColor="#424242"
+                android:textSize="16sp"/>
+
+            <LinearLayout
+                android:layout_width="380dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="6dp"
+                    android:layout_gravity="center"
+                    android:text="@string/username"
+                    android:textSize="20sp"
+                    android:textColor="@color/gray_light"/>
+
+                <EditText
+                    android:id="@+id/edit_User_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/round_back_light_10"
+                    android:hint="@string/username"
+                    android:importantForAutofill="no"
+                    android:inputType="textPersonName"
+                    android:maxLines="1"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="0dp"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="380dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="43dp"
+                    android:layout_gravity="center"
+                    android:text="@string/slogan"
+                    android:textSize="20sp"
+                    android:textColor="@color/gray_light"/>
+
+                <EditText
+                    android:id="@+id/edit_User_Slogan"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/round_back_light_10"
+                    android:hint="@string/slogan"
+                    android:importantForAutofill="no"
+                    android:inputType="textPersonName"
+                    android:maxLines="1"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="0dp"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="380dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp">
+
+                <LinearLayout
+                    android:layout_width="270dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="22dp"
+                        android:layout_gravity="center"
+                        android:text="@string/birthdate"
+                        android:textSize="20sp"
+                        android:textColor="@color/gray_light"/>
+
+                    <EditText
+                        android:id="@+id/birthdateEditText"
+                        android:layout_width="150dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/round_back_light_10"
+                        android:hint="@string/birthdate"
+                        android:importantForAutofill="no"
+                        android:inputType="none"
+                        android:maxLines="1"
+                        android:paddingStart="20dp"
+                        android:paddingEnd="0dp"
+                        android:textSize="16sp"
+                        android:focusable="false"
+                        android:clickable="true"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_gravity="center"
+                        android:text="@string/age"
+                        android:textSize="20sp"
+                        android:textColor="@color/gray_light"/>
+
+                    <TextView
+                        android:id="@+id/agePicker"
+                        android:layout_width="60dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:textSize="20sp"
+                        android:text="@string/_10"
+                        android:gravity="center"
+                        android:background="@drawable/round_back_light_10" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="380dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="42dp"
+                    android:layout_gravity="center"
+                    android:text="@string/region"
+                    android:textSize="20sp"
+                    android:textColor="@color/gray_light"/>
+
+                <Spinner
+                    android:id="@+id/regionSpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/round_back_light_10"
+                    android:hint="@string/region"
+                    android:importantForAutofill="no"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:paddingStart="20dp"
+                    android:textSize="16sp"
+                    tools:ignore="RtlSymmetry" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="380dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="40dp"
+                    android:text="@string/gender"
+                    android:textSize="20sp"
+                    android:layout_gravity="center"
+                    android:textColor="@color/gray_light"/>
+
+                <RadioGroup
+                    android:id="@+id/genderRadioGroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:background="@drawable/round_back_light_10"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/maleRadioButton"
+                        android:layout_width="70dp"
+                        android:layout_height="50dp"
+                        android:drawableTop="@drawable/baseline_male_24"
+                        android:background="@android:color/transparent"
+                        android:padding="16dp" />
+
+                    <RadioButton
+                        android:id="@+id/femaleRadioButton"
+                        android:layout_width="70dp"
+                        android:layout_height="50dp"
+                        android:drawableTop="@drawable/baseline_female_24"
+                        android:background="@android:color/transparent"
+                        android:gravity="center"
+                        android:padding="16dp" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/saveButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/round_back_theme_1000"
+                android:text="@string/save"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:textSize="20sp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:indeterminate="true"
+        android:indeterminateDrawable="@drawable/circular_progress_bar"
+        android:background="@android:color/transparent" />
+
+</RelativeLayout>

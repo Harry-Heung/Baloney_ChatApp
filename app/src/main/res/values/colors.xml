@@ -1,0 +1,22 @@
+<resources>
+    <!-- Light Mode Colors -->
+    <color name="theme_color">#FFA437</color>
+    <color name="theme_color_user_chat_background_light">#FFC150</color>
+    <color name="theme_color_opo_chat_background_light">#979797</color>
+    <color name="input_light">#F1F1F1</color>
+    <color name="on_theme_color">#FFFFFF</color>
+    <color name="recording_color">#FF0000</color>
+    <color name="very_light_gray">#EAEAEA</color>
+
+    <!-- Dark Mode Colors -->
+    <color name="theme_color_dark">#D18700</color>
+    <color name="theme_color_user_chat_background_dark">#91620D</color>
+    <color name="theme_color_opo_chat_background_dark">#1C1B2B</color>
+    <color name="on_theme_color_dark">#000000</color>
+
+    <!-- Other Colors -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="gray_light">#979797</color>
+    <color name="gray_dark">#D3D3D3</color>
+</resources>

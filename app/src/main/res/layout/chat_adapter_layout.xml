@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <LinearLayout
+        android:id="@+id/oppoLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentStart="true"
+        android:layout_margin="8dp"
+        android:background="@drawable/opo_msg_back"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/oppoImage"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:scaleType="centerInside"
+            android:visibility="gone"
+            android:layout_marginTop="4dp"/>
+
+        <TextView
+            android:id="@+id/oppoMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:visibility="gone"
+            android:layout_marginTop="4dp"/>
+
+        <!-- 新增音頻消息的支持 -->
+        <LinearLayout
+            android:id="@+id/oppoAudioLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:visibility="gone"
+            android:layout_marginTop="4dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:id="@+id/oppoAudio"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/baseline_play_arrow_24" />
+
+                <ProgressBar
+                    android:id="@+id/oppoAudioProgress"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    style="@android:style/Widget.ProgressBar.Horizontal" />
+            </LinearLayout>
+
+            <!-- 音頻時長顯示 -->
+            <TextView
+                android:id="@+id/oppoAudioTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00:00/00:00"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                android:layout_marginTop="4dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/oppoMsgTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#888888"
+        android:textSize="12sp"
+        android:layout_below="@id/oppoLayout"
+        android:layout_marginStart="16dp"
+        android:visibility="gone"/> <!-- 默認為 gone -->
+
+    <LinearLayout
+        android:id="@+id/myLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="8dp"
+        android:background="@drawable/my_msg_back"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/myImage"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:scaleType="centerInside"
+            android:visibility="gone"
+            android:layout_marginTop="4dp"/>
+
+        <TextView
+            android:id="@+id/myMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:visibility="gone"
+            android:layout_marginTop="4dp"/>
+
+        <!-- 新增音頻消息的支持 -->
+        <LinearLayout
+            android:id="@+id/myAudioLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:visibility="gone"
+            android:layout_marginTop="4dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:id="@+id/myAudio"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/baseline_play_arrow_24" />
+
+                <ProgressBar
+                    android:id="@+id/myAudioProgress"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    style="@android:style/Widget.ProgressBar.Horizontal" />
+            </LinearLayout>
+
+            <!-- 音頻時長顯示 -->
+            <TextView
+                android:id="@+id/myAudioTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00:00/00:00"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
+                android:layout_marginTop="4dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/myMsgTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#888888"
+        android:textSize="12sp"
+        android:layout_below="@id/myLayout"
+        android:layout_marginEnd="16dp"
+        android:layout_alignParentEnd="true"/>
+</RelativeLayout>
